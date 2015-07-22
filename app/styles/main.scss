@@ -1,0 +1,60 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background:url('../images/geometry.png') repeat;
+}
+
+.progress {
+  height:25px;
+  margin:40px 0 10px;
+
+  span {
+    font-size:25px;
+    line-height:45px;
+    font-weight:300;
+  }
+
+}
+
+.img-post {
+  margin-bottom:15px;
+
+  img {
+    border-radius:5px;
+  }
+}
+
+#timeDays {
+  text-align:center;
+  font-size:42px;
+  padding:75px 0 25px 0;
+  font-weight:300;
+
+  span {
+    color:#337ab7;
+    font-size:54px;
+
+  }
+
+}
+
+.stat {
+  p {text-align:center; font-size:20px; font-weight:300;}
+}
+
+.timeline {
+  font-size:18px;
+  padding:15px 0;
+  font-weight:300;
+  text-align:left;
+  border-bottom:1px solid rgba(0,0,0,.5);
+
+  i {color:#337ab7}
+}
+
+.twitter-btn {text-align:center;}
