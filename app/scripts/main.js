@@ -11,7 +11,8 @@ $(document).ready(function(){
         accessToken: '2111454600.467ede5.0e86225e49134a2d935e14c206904731',
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
-        template: '<div class="panel panel-default"><div class="panel-body"><a href="{{link}}"><img class="img-responsive" src="{{image}}" /></a></div><div class="panel-footer">{{caption}}</div></div>'
+        template: '<div class="panel panel-default"><div class="panel-body"><a href="{{link}}"><img class="img-responsive" src="{{image}}" /></a></div><div class="panel-footer">{{caption}}</div></div>',
+        limit: 50
     });
 
     userFeed.run();
