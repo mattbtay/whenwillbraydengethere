@@ -44,19 +44,20 @@ function timeCalculator(){
 	var percentComp = 100 - percentLeft;
 	//console.log(daysLeft);
 	//console.log(percentLeft);
-	console.log(percentComp);
+	//console.log(percentComp.toFixed(2));
+	//console.log(percentComp.toFixed(2));
 
 	setTimeout(function(){
-	$('.progress-bar').css('width', Math.round(percentComp) + '%');
+	$('.progress-bar').css('width', percentComp.toFixed(2) + '%');
 
 	},1500);
 
 	setTimeout(function(){
-		$('.stat p').html(Math.round(percentComp) + '%' + ' Complete');
+		$('.stat p').html(percentComp.toFixed(2) + '%' + ' Complete');
 	},1800);
 
-	$('.progress-bar').attr('aria-valuenow', percentComp);
-	$('.progress-bar span').html(percentComp + '%');
+	$('.progress-bar').attr('aria-valuenow', percentComp.toFixed(2));
+	$('.progress-bar span').html(percentComp.toFixed(2) + '%');
 
 
 
